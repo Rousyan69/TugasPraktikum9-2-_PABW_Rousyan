@@ -1,0 +1,1 @@
+PHP lint OK: 83 file PHP.

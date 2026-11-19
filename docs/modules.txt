@@ -1,0 +1,3 @@
+  Status / Name ...................................................................................... Path / priority  
+  [Enabled] Pendaftaran  C:\Users\ThinkPad\Documents\Codex\2026-11-13\referenced-chatgpt-conversation-this-is-an-2\work\pertemuan9_hmvc_react\Modules/Pendaftaran [0]  
+  [Enabled] UserManagement  C:\Users\ThinkPad\Documents\Codex\2026-11-13\referenced-chatgpt-conversation-this-is-an-2\work\pertemuan9_hmvc_react\Modules/UserManagement [0]  

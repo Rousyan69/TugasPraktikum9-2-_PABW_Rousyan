@@ -1,0 +1,8 @@
+{
+  "name": "RuasJalan",
+  "alias": "ruasjalan",
+  "priority": 1,
+  "providers": [
+    "Modules\\RuasJalan\\Providers\\RuasJalanServiceProvider"
+  ]
+}

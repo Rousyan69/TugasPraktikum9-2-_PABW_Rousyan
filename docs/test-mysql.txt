@@ -1,0 +1,102 @@
+
+  [30;43;1m WARN [39;49;22m Option --configuration cannot be used more than once
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true is true                                                                                            2.70s  
+
+   PASS  Tests\Feature\Auth\AuthenticationTest
+  ✓ login screen can be rendered                                                                                 2.42s  
+  ✓ users can authenticate using the login screen                                                                0.46s  
+  ✓ users with two factor enabled are redirected to two factor challenge                                         0.34s  
+  ✓ users can not authenticate with invalid password                                                             2.46s  
+  ✓ users can logout                                                                                             0.13s  
+  ✓ users are rate limited                                                                                       0.18s  
+
+   PASS  Tests\Feature\Auth\EmailVerificationTest
+  ✓ email verification screen can be rendered                                                                    2.17s  
+  ✓ email can be verified                                                                                        0.14s  
+  ✓ email is not verified with invalid hash                                                                      0.13s  
+  ✓ email is not verified with invalid user id                                                                   0.15s  
+  ✓ verified user is redirected to dashboard from verification prompt                                            0.13s  
+  ✓ already verified user visiting verification link is redirected without firing event again                    0.12s  
+
+   PASS  Tests\Feature\Auth\PasswordConfirmationTest
+  ✓ confirm password screen can be rendered                                                                      2.20s  
+  ✓ password confirmation requires authentication                                                                0.09s  
+
+   PASS  Tests\Feature\Auth\PasswordResetTest
+  ✓ reset password link screen can be rendered                                                                   2.16s  
+  ✓ reset password link can be requested                                                                         0.35s  
+  ✓ reset password screen can be rendered                                                                        2.44s  
+  ✓ password can be reset with valid token                                                                       0.34s  
+  ✓ password cannot be reset with invalid token                                                                  0.40s  
+
+   PASS  Tests\Feature\Auth\RegistrationTest
+  ✓ registration screen can be rendered                                                                          2.13s  
+  ✓ new users can register                                                                                       0.17s  
+
+   PASS  Tests\Feature\Auth\TwoFactorChallengeTest
+  ✓ two factor challenge redirects to login when not authenticated                                               0.08s  
+  ✓ two factor challenge can be rendered                                                                         2.40s  
+
+   PASS  Tests\Feature\Auth\VerificationNotificationTest
+  ✓ sends verification notification                                                                              0.12s  
+  ✓ does not send verification notification if email is verified                                                 0.10s  
+
+   PASS  Tests\Feature\DashboardTest
+  ✓ guests are redirected to the login page                                                                      0.11s  
+  ✓ authenticated users can visit the dashboard                                                                  2.16s  
+
+   PASS  Tests\Feature\ModuleRegressionTest
+  ✓ ordinary users cannot mutate or read administrative resources                                                0.24s  
+  ✓ unauthenticated json requests cannot access any registration endpoint                                        0.12s  
+  ✓ admin can update another user while keeping or replacing a password then delete them                         0.16s  
+  ✓ user validation rejects duplicate email bad role and mismatched passwords                                    0.13s  
+  ✓ administrative search role filter and pagination preserve query parameters                                   2.23s  
+  ✓ dashboard exposes user totals only to admin                                                                  4.21s  
+  ✓ edit without replacement keeps the uploaded file and original filename                                       0.25s  
+  ✓ registration validates file size duplicate email and telephone without creating files                        0.18s  
+  ✓ png jpg jpeg and pdf uploads are accepted with ('png')                                                       0.18s  
+  ✓ png jpg jpeg and pdf uploads are accepted with ('jpg')                                                       0.15s  
+  ✓ png jpg jpeg and pdf uploads are accepted with ('jpeg')                                                      0.16s  
+  ✓ png jpg jpeg and pdf uploads are accepted with ('pdf')                                                       0.17s  
+  ✓ demo seeding creates usable accounts without fake two factor challenges                                      0.37s  
+
+   PASS  Tests\Feature\PendaftaranTest
+  ✓ index renders the react page of the module                                                                   2.17s  
+  ✓ data endpoint returns registrations as json                                                                  0.15s  
+  ✓ store returns 422 when the form is empty                                                                     0.14s  
+  ✓ store saves the data and the uploaded file                                                                   0.14s  
+  ✓ zip file is rejected                                                                                         0.13s  
+  ✓ update replaces the old file                                                                                 0.16s  
+  ✓ destroy deletes the data and its file, unknown id returns 404                                                0.18s  
+
+   PASS  Tests\Feature\Settings\PasswordUpdateTest
+  ✓ password update page is displayed                                                                            2.19s  
+  ✓ password can be updated                                                                                      0.12s  
+  ✓ correct password must be provided to update password                                                         0.13s  
+
+   PASS  Tests\Feature\Settings\ProfileUpdateTest
+  ✓ profile page is displayed                                                                                    2.15s  
+  ✓ profile information can be updated                                                                           0.12s  
+  ✓ email verification status is unchanged when the email address is unchanged                                   0.11s  
+  ✓ user can delete their account                                                                                0.11s  
+  ✓ correct password must be provided to delete account                                                          0.12s  
+
+   PASS  Tests\Feature\Settings\TwoFactorAuthenticationTest
+  ✓ two factor settings page can be rendered                                                                     2.18s  
+  ✓ two factor settings page requires password confirmation when enabled                                         0.12s  
+  ✓ two factor settings page does not requires password confirmation when disabled                               2.17s  
+  ✓ two factor settings page returns forbidden response when two factor is disabled                              0.13s  
+
+   PASS  Tests\Feature\UserManagementTest
+  ✓ guest is redirected to login from module pages                                                               0.11s  
+  ✓ registered user always gets the user role                                                                    0.11s  
+  ✓ user cannot open the user management page                                                                    0.14s  
+  ✓ admin can see the user list rendered by the module page                                                      2.15s  
+  ✓ admin can create a user                                                                                      0.12s  
+  ✓ admin cannot demote or delete their own account                                                              0.12s  
+
+  Tests:    66 passed (285 assertions)
+  Duration: 52.00s
+

@@ -1,0 +1,8 @@
+{
+  "name": "LaporanJalan",
+  "alias": "laporanjalan",
+  "priority": 2,
+  "providers": [
+    "Modules\\LaporanJalan\\Providers\\LaporanJalanServiceProvider"
+  ]
+}

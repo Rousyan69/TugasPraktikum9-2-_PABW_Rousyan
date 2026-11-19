@@ -1,0 +1,9 @@
+{
+  "name": "roadwatch/ruasjalan",
+  "type": "laravel-module",
+  "autoload": {
+    "psr-4": {
+      "Modules\\RuasJalan\\": "app/"
+    }
+  }
+}
